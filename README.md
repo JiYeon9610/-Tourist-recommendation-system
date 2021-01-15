@@ -81,10 +81,20 @@
 
 
 -> 자세한 시각화와 설명은 Team Data Travel 보고서.pdf 참고
+
 -> 예시 코드: group2 network analysis(3).R
 
 
-## 
+## XG Boost(예산 책정 가이드라인 제시)
+
+- 반응변수 Y: 관광객들이 사용한 예산
+- 설명변수 X: 개인이 고려하는 요인, 여행을 오기 전 예산을 책정할 때 별개로 영향을 미칠 수 있는 요인을 나타내는 변수들을 사용
+✓ 여행객 유형 : nation, gender, num_companion, companion, decision_time
+✓ 여행 목적/유형 : purpose, activity1, type,
+✓ 숙박 유형 : accomodations_hotel, accomodations_guesthouse, accomodations_condo,
+accomodations_friend, accomodations_official, accomodations_temple, accomodations_homestay,
+✓ 여행 시기 : period, spring, summer, fall, winter
+✓ 여행 장소 : visit_place_1~48, area_total, site_total, visit_seoul
 
 
 
