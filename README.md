@@ -89,15 +89,34 @@
 
 - 반응변수 Y: 관광객들이 사용한 예산
 - 설명변수 X: 개인이 고려하는 요인, 여행을 오기 전 예산을 책정할 때 별개로 영향을 미칠 수 있는 요인을 나타내는 변수들을 사용
+
 ✓ 여행객 유형 : nation, gender, num_companion, companion, decision_time
-✓ 여행 목적/유형 : purpose, activity1, type,
-✓ 숙박 유형 : accomodations_hotel, accomodations_guesthouse, accomodations_condo,
-accomodations_friend, accomodations_official, accomodations_temple, accomodations_homestay,
+
+✓ 여행 목적/유형 : purpose, activity1, type
+
+✓ 숙박 유형 : accomodations_hotel, accomodations_guesthouse, accomodations_condo, accomodations_friend, accomodations_official, accomodations_temple, accomodations_homestay
+
 ✓ 여행 시기 : period, spring, summer, fall, winter
+
 ✓ 여행 장소 : visit_place_1~48, area_total, site_total, visit_seoul
 
 
+- 노이즈를 감소시키고 예측력을 향상시키기 위해 Y 변수를 4 개의 범주로 재 분류하여 4 개의 범주를 예측하는 예측모델을 구축
+-  Hold out set의 Accuracy를 평가한 결과 53.45%의 정확도
 
+
+## 활용 방안(Travel Maker 어플리케이션)
+
+1. 관광객이 원하는 동행 유형을 선택 : 관광객의 만족도를 위해 유형에 따른 여행에 관한 권장사항을 알려줌.
+2. 관광지 정보 제시: 네트워크 분석을 통해 도출된 동행 유형별 인기 관광지 정보를 네트워크 Plot으로 제공. 한 곳을 클릭하면, 특정 관광지와 함께 연계하여 추천할만한 관광지를 여러개 제언. 실시간으로 동행 유형에 따른 인기 관광지와 각 관광지와 엮인 잠재 관광지를 추천받을 수 있게 서비스 제공.
+3. 예산 범위 추천: 약간의 개인정보와 추가적인 여행정보(여행목적, 여행 기간, 숙소 정보 등)을 입력하면 이에 맞는 적정 예산 범위를 제시
+
+
+## 한계 및 의의
+
+- 한계 : 본 연구는 외래 관광객 설문조사 데이터를 이용한 연구로 한국인들의 국내 여행 관련 데이터는 반영할 수 없었다. 만일, 한국 관광객의 데이터가 있다면 국내 여행 추천 시스템을 고안할 수 있을 것으로 기대한다. 또한, 본 연구는 2017년의 데이터만 사용한 연구로 이전의 데이터를 수집할 수 있었다면 더욱 세밀한 연구가 진행되었을 것이다. 또한 위도, 경도를 이용한 지리적 요인을 고려하지 못한 점이 본 연구의 한계점이다.
+
+- 의의 : 여행 추천 시스템에 아이디어를 제시하고 발전 방향을 제시했다는 점에도 의의가 있다. 현재 플랫폼에 존재하는 여행 추천 시스템들은 방문수가 가장 많거나 가장 인기가 많은 관광지 순으로 추천을 진행한다. 또한 만족도를 높이기 위한 방향 제시를 해주는 시스템은 거의 없다. 이 모든 과정을 하나로 통합하고 하나의 어플로 구현하고자 구상했다는 점에 의의가 있다.
 
 
 
